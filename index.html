@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Primary navigation">
+      <div class="logo">YourName</div>
+      <ul>
+        <li><a href="#about" aria-label="About section">About</a></li>
+        <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+        <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About / Hero Section -->
+  <section id="about" tabindex="-1" aria-label="About Me">
+    <div class="container">
+      <img src="images/profile.jpg" alt="Your profile picture" />
+      <h1>Hello, I'm YourName</h1>
+      <p>
+        I am a passionate web developer with expertise in building beautiful and responsive websites. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I love crafting intuitive user experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" tabindex="-1" aria-label="My Projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" tabindex="0" aria-labelledby="project1-title">
+          <img class="project-image" src="images/project1.jpg" alt="Screenshot of Project 1" />
+          <div class="project-content">
+            <h3 id="project1-title">Project One</h3>
+            <p>A responsive e-commerce website built with React and TailwindCSS.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" tabindex="0" aria-labelledby="project2-title">
+          <img class="project-image" src="images/project2.jpg" alt="Screenshot of Project 2" />
+          <div class="project-content">
+            <h3 id="project2-title">Project Two</h3>
+            <p>A portfolio website designed with modern CSS Grid and animations.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" tabindex="0" aria-labelledby="project3-title">
+          <img class="project-image" src="images/project3.jpg" alt="Screenshot of Project 3" />
+          <div class="project-content">
+            <h3 id="project3-title">Project Three</h3>
+            <p>A blog platform built with Node.js and Express, featuring full CRUD functionality.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" tabindex="-1" aria-label="Contact Me">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST" aria-label="Contact form">
+        <input type="text" name="name" placeholder="Your name" required aria-required="true" />
+        <input type="email" name="_replyto" placeholder="Your email" required aria-required="true" />
+        <textarea name="message" placeholder="Your message" required aria-required="true"></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 YourName. All rights reserved.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
